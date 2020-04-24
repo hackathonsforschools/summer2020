@@ -9,6 +9,20 @@ h1, h2, h3, h4, h5, h6 {
     color: #f1f2f6;
 }
 
+.answer-box {
+    position: relative;
+    margin: 45px;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255, 100);
+}
+
+.answer-box p {
+    color: black;
+    padding: 7px;
+    font-size: 75%;
+    font-weight: 400;
+}
+
 .main {
     background: linear-gradient(135deg, rgba(145,45,245,1) 30%, rgba(68,155,247,1) 100%);
     height: 100vh;
