@@ -1,6 +1,7 @@
 /* font override */
 p, h1, h2, h3, h4, h5, h6, button, .name {
     font-family: 'Poppins', sans-serif;
+    margin: 50px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -13,6 +14,8 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     position: fixed;
     width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 
