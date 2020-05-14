@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<div class="main">
+    <div class="row h-100">
+        <div class="col-12 my-auto">
+            <a href="https://hackathonsforschools.com"><img class="logo" src="./assets/img/logo.png" /></a>
+            <h2>Summer Event 2020</h2>
+            {% include register-buttons.html %}
+
+            <hr>
+            {% for info in site.data.info %}
+            <h2>{{ info.title}}</h2>
+            <div class="answer-box">
+                <p>
+                    {{ info.answer}}
+                </p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

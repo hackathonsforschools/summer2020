@@ -2,6 +2,11 @@
 
 Static website. Will use [summer.hackathonsforschools.com](https://summer.hackathonsforschools.com) for the moment. More information to come soon!
 
-## Development
+## Setup
 
-Open the `index.html` in the root directory.
+Make sure to have Ruby and Bundler installed.
+
+```
+bundle install
+bundle exec jekyll serve
+```

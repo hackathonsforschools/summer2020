@@ -1,0 +1,22 @@
+title: H4S - Summer Event
+email: summer@hackathonsforschools.com
+description: >-
+   This event is a week-long, online programme designed for
+   students with a strong interest in technology. We will
+   provide a series of workshops and interactive sessions for
+   the students to build their technical and soft skills to
+   prepare them for the workplace. Over the course of the
+   program, the students will complete a guided group project
+   with an industry professional. For the group project,
+   students will be given a brief that's very broad so they
+   can be as creative as they like.
+baseurl: "" 
+url: "http://summer.hackathonsforschools.com"
+twitter_username: hackathonsforschools
+
+# theme: minima
+#plugins:
+#  - jekyll-feed
+
+sass:
+  sass_dir: _sass
