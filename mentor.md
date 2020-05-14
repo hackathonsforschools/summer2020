@@ -1,6 +1,6 @@
 ---
 layout: redirect
 permalink: /mentor
-redirect: https://forms.gle/jZSwapwiFGEdfqRM8
+redirect: https://forms.gle/ECqzGMdivTjkVXnJ6
 title: Industry Mentors Applications
 ---
