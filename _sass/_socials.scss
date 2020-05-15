@@ -1,0 +1,30 @@
+.site-footer {
+  padding-bottom: 2em;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  font-size: 0.9em;
+  
+  .footer-icons {
+    ul {
+      list-style: none;
+      margin: 0;
+    }
+    
+    li {
+      display: inline;
+    }
+    
+    a {
+      color: #5c47ff;
+    }
+
+    .icon {
+      color: #ffffff;
+    }
+
+    a:hover {
+      color: darken(#5c47ff, 15%);
+    }
+  }
+}
