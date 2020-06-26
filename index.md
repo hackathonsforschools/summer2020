@@ -1,4 +1,4 @@
 ---
 layout: home
-title: H4S Summer Event
+title: Student Summer Sprint
 ---
