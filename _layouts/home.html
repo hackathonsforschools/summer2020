@@ -14,13 +14,8 @@ layout: default
     <div class="row">
         {% for info in site.data.info %}
         <div class="col-sm">
-            <h3>{{ info.title}}</h3>
-        </div>
-        {% endfor %}
-        <div class="w-100"></div>
-        {% for info in site.data.info %}
-        <div class="col-sm">
             <div class="answer-box">
+                <h3>{{ info.title}}</h3>
                 <p>
                     {{ info.answer}}
                 </p>
