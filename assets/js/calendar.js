@@ -1,11 +1,21 @@
 const CALENDAR_ID = 'wrussell.co.uk_kd25len0s48hc948apg112rqd0@group.calendar.google.com'
-const CALENDAR_KEY = 'AIzaSyBplGV41n0rSD_NK612JhLTxePXXeyo0iE'
+const CALENDAR_KEY = 'AIzaSyCvFbAkqIoeJfGqoA_LssluJriHCX3PBmk'
 
 const DATE_24HR_FORMAT = {
     hour: '2-digit',
     minute: '2-digit',
     omitZeroMinute: false,
     hour12: false
+}
+
+const DATE_RANGE_FORMAT = {
+    month: 'short',
+    day: 'numeric',
+    separator: ' to ',
+    hour: '2-digit',
+    minute: '2-digit',
+    hour12: false,
+    timeZone: 'UTC'
 }
 
 let calendar
@@ -22,7 +32,9 @@ document.addEventListener('DOMContentLoaded', () => {
         buttonText: {  list: 'All', today: 'Today' },
         firstDay: 1,
         height: 1000,
+        themeSystem: 'bootstrap',
         googleCalendarApiKey: CALENDAR_KEY,
+        eventClick: displayEvent,
         events: {
             googleCalendarId: CALENDAR_ID,
             failure: onLoadFailed
@@ -38,6 +50,17 @@ document.addEventListener('DOMContentLoaded', () => {
     })
     calendar.render()
 })
+
+function displayEvent(info) {
+    info.jsEvent.preventDefault()
+
+    const date = info.event._instance.range
+    $('#event-title').text(info.event._def.title)
+    $('#event-date').text(FullCalendar.formatRange(date.start, date.end, DATE_RANGE_FORMAT))
+    $('#event-desc').text(info.event._def.extendedProps.description)
+
+    $('#event-modal').modal('show')
+}
 
 function onLoadFailed(error) {
     calendarElement.innerHTML =
