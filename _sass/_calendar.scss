@@ -1,0 +1,45 @@
+.fc-content {
+  background-color: #5c47ff;
+  color: #ffffff;
+}
+
+.fc-left {
+    h2 {
+        color: black;
+    }
+}
+
+.fc-event {
+  background-color: #5c47ff;
+}
+
+#calendar-error {
+  text-align: center;
+}
+
+@media only screen and (max-width : 900px) {
+   #calendar {
+     width: 100vw;
+     margin-left: calc(-50vw + 50%);
+   }
+ 
+   .fc-left > h2 {
+     font-size: 1.2em;
+   }
+ 
+    .fc-toolbar.fc-header-toolbar {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 0;
+    }
+ 
+   .fc-toolbar.fc-header-toolbar > * {
+        text-align: center;
+        margin-bottom: 0.5em;
+   }
+ 
+   .fc-button {
+        padding: 0.2em 0.3em;
+        background-color: #5c47ff;
+   }
+}

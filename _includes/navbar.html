@@ -1,0 +1,23 @@
+<header class="nav-bar">
+    <div class="nav-content">
+        <!-- Logo and title -->
+        <a class="logo-touch-target" href="{{ '/' | relative_url }}">
+            <!--<img class="nav-content nav-logo" src="/assets/img/logo.png" /> -->
+            <div class=" nav-content nav-title">
+                Student Summer Sprint
+            </div>
+        </a>
+        <script src="/assets/js/hamburger.js"></script>
+        <a aria-label="pull" id="pull" class="toggle" href="#" onclick="openMenu(); return false;">
+            <i class="fa fa-bars fa-lg hamburger-icon"></i>
+        </a>
+
+        <!-- Toggle menu -->
+        <nav class="clear">
+            <ul id="menu" class="hide">
+                <li class="separator"></li>
+                <li><a title="Schedule" href="/schedule">Schedule</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
