@@ -1,7 +1,7 @@
 /* font override */
 p, h1, h2, h3, h4, h5, h6, button, .name {
     font-family: 'Poppins', sans-serif;
-    margin: 50px;
+    margin: 40px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -20,8 +20,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo {
-    width: 50vw;
-    margin-top: 16px;
+    width: 30vw;
+    margin-top: 30px;
 }
 
 .my-auto { /* fixes main centering */
@@ -54,6 +54,9 @@ h1, h2, h3, h4, h5, h6 {
     font-size: xx-large;
     font-weight: bolder;
     margin: 30px !important;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 30px !important;
 }
 
 .main .name {
