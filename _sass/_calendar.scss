@@ -4,9 +4,20 @@
 }
 
 .fc-left {
-    h2 {
-        color: black;
-    }
+    display: none;
+}
+
+.fc-header-toolbar {
+    display: none !important;
+}
+
+.fc-button-primary {
+    background-color: #5c47ff !important;
+    border-color: black !important;
+}
+
+.fc-event-dot {
+    background-color: #5c47ff !important;
 }
 
 .fc-event {

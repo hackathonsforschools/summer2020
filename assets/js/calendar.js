@@ -17,9 +17,9 @@ document.addEventListener('DOMContentLoaded', () => {
     calendar = new FullCalendar.Calendar(calendarElement, {
         plugins: ['dayGrid', 'googleCalendar', 'list', 'timeGrid'],
         defaultView: 'listYear',
-        header: { center: 'dayGridMonth, timeGridWeek, listYear' },
-        titleFormat: { year: 'numeric', month: 'short', day: 'numeric' },
-        buttonText: { dayGridMonth: 'Month', timeGridWeek: 'Week', list: 'All', today: 'Today' },
+        header: { center: '' },
+        titleFormat: { year: 'numeric', day: 'numeric' },
+        buttonText: {  list: 'All', today: 'Today' },
         firstDay: 1,
         height: 1000,
         googleCalendarApiKey: CALENDAR_KEY,
@@ -28,20 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
             failure: onLoadFailed
         },
         eventTimeFormat: DATE_24HR_FORMAT,
-        views: {
-            // month view
-            dayGridMonth: {
-                displayEventEnd: true
-            },
-            // week view
-            week: {
-                columnHeaderFormat: { weekday: 'short' },
-                allDaySlot: false,
-                slotDuration: '01:00:00',
-                slotLabelInterval: '02:00:00',
-                slotLabelFormat: DATE_24HR_FORMAT,
-                nowIndicator: true
-            },
+        views: {            
             // all upcoming events view
             listYear: {
                 listDayFormat: { year: 'numeric', month: 'short', day: '2-digit', omitCommas: true },
@@ -49,7 +36,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     })
-
     calendar.render()
 })
 
