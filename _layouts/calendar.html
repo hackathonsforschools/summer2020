@@ -2,6 +2,23 @@
 layout: default
 ---
 
+<!-- FullCalendar.io -->
+{% if page.scripts %}
+<!-- page-specific scripts -->
+{% for script in page.scripts %}
+<script src="{{ script.url | relative_url }}" {%- if script.hash %} integrity="{{ script.hash }}"
+    crossorigin="anonymous" {%- endif -%}></script>
+{% endfor %}
+{% endif %}
+
+<!-- external style sheets -->
+{%- if page.styles -%}
+<!-- page-specific style sheets -->
+{% for style in page.styles %}
+<link rel="stylesheet" href="{{ style.url | relative_url }}" {%- if style.hash %} integrity="{{ style.hash }}"
+    crossorigin="anonymous" {%- endif -%}>
+{% endfor %}
+{% endif %}
 {% include navbar.html %}
 
 <div class="container page-content page">

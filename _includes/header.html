@@ -16,24 +16,6 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
         integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
-    
-    <!-- FullCalendar.io -->
-    {% if page.scripts %}
-    <!-- page-specific scripts -->
-    {% for script in page.scripts %}
-    <script src="{{ script.url | relative_url }}" {%- if script.hash %} integrity="{{ script.hash }}"
-        crossorigin="anonymous" {%- endif -%}></script>
-    {% endfor %}
-    {% endif %}
-    
-    <!-- external style sheets -->
-    {%- if page.styles -%}
-    <!-- page-specific style sheets -->
-    {% for style in page.styles %}
-    <link rel="stylesheet" href="{{ style.url | relative_url }}" {%- if style.hash %} integrity="{{ style.hash }}"
-        crossorigin="anonymous" {%- endif -%}>
-    {% endfor %}
-    {% endif %}
 
     <link lang='sass' rel="stylesheet" href="/assets/css/main.css">
     <link rel='icon' href='./assets/img/favicon.ico' type='image/x-icon' />
