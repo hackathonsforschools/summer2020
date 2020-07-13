@@ -23,7 +23,7 @@ scripts:
     hash: sha384-fG3/vSufb+AA91JKrVZZiS16J72wgK0u/CK+afw3Kw2tbVEPEFcTHac7sJabZd31
   - url: https://unpkg.com/@fullcalendar/google-calendar@4.3.0/main.min.js
     hash: sha384-Ha5I8QPCC/z63Vv2VZG8QZIXGIhDPrLLu3fMx46RG+FLQqpWNzsA8mZIR9YXPahZ
-  - url: https://unpkg.com/@fullcalendar/bootstrap/main.min.js
-    hash: sha384-iE2vNnlZ9zLj/SJ+wylWYZLKMYF/03QtrLFdByV59XHKHCie9UTGNJnH6imUYv17
+  - url: https://unpkg.com/@fullcalendar/bootstrap@4.3.0/main.min.js
+    hash: sha384-xcJfdzrkJuIsmAm2DIzmmFsRJA9pItoEHjpES5SO9uQJ8cL/fN+ARTFFPpsB8utm
   - url: /assets/js/calendar.js
 ---
