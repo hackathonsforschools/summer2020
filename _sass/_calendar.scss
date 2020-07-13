@@ -1,0 +1,72 @@
+.fc-content {
+  background-color: #5c47ff;
+  color: #ffffff;
+}
+
+.fc-left {
+    display: none;
+}
+
+.fc-header-toolbar {
+    display: none !important;
+}
+
+.fc-button-primary {
+    background-color: #5c47ff !important;
+    border-color: black !important;
+}
+
+.fc-event-dot {
+    background-color: #5c47ff !important;
+}
+
+.fc-event {
+  background-color: #5c47ff;
+}
+
+#event-title {
+    color: black;
+    font-family: "Poppins";
+}
+
+#calendar-error {
+  text-align: center;
+}
+
+#event-modal h4, #event-modal p {
+  font-family: unset !important;
+}
+
+.modal-title {
+    margin: 0.5em;
+}
+
+.modal-body {
+    margin: 0.5em;
+}
+
+#event-desc {
+    margin: 0.2em !important;
+}
+
+.line {
+    margin-left: 0.3em !important;
+    margin-right: 0.3em !important;
+    margin-top: 1em !important;
+    margin-bottom: 1em !important;
+}
+
+.material-icons {
+  font-size: 26px;
+  position: relative;
+  top: 0.2em;
+  padding-right: 0.2em;
+  color: black;
+}
+
+@media only screen and (max-width : 900px) {
+   #calendar {
+     width: 100vw;
+     margin-left: calc(-50vw + 50%);
+   }
+}
