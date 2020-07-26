@@ -54,11 +54,11 @@ document.addEventListener('DOMContentLoaded', () => {
 function displayEvent(info) {
     info.jsEvent.preventDefault()
 
-    const date = info.event._instance.range
-    $('#event-title').text(info.event._def.title)
-    $('#event-date').text(FullCalendar.formatRange(date.start, date.end, DATE_RANGE_FORMAT))
+    const date = info.event._instance.range; 
+    $('#event-title').text(info.event._def.title);
+    $('#event-date').text(FullCalendar.formatRange(date.start, date.end, DATE_RANGE_FORMAT));
     $('#event-desc').text(info.event._def.extendedProps.description)
-
+    $('#event-link').attr("href", info.event._def.url);
     $('#event-modal').modal('show')
 }
 
