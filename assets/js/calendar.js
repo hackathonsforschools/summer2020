@@ -48,6 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     })
+    document.getElementById('timezone').innerHTML = `All times are in your local timezone! (${Intl.DateTimeFormat().resolvedOptions().timeZone})`
     calendar.render()
 })
 
