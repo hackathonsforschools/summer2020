@@ -62,7 +62,6 @@ function displayEvent(info) {
     
     let regex = new RegExp('(?<=href=").*?(?=")');
     let regexHtml = new RegExp('<\s*a[^>]*>(.*?)<\s*/\s*a>');
-    let regexUrl = new RegExp('^http?://');
     var url = description.match(regex);
     $('#event-desc').text(description.replace(regexHtml, url.toString().substring(8, url.toString().length)));
 
