@@ -58,12 +58,15 @@ function displayEvent(info) {
     const date = info.event._instance.range; 
     $('#event-title').text(info.event._def.title);
     $('#event-date').text(FullCalendar.formatRange(date.start, date.end, DATE_RANGE_FORMAT));
-    var description = info.event._def.extendedProps.description;
+    let description = info.event._def.extendedProps.description;
     
     let regex = new RegExp('(?<=href=").*?(?=")');
     let regexHtml = new RegExp('<\s*a[^>]*>(.*?)<\s*/\s*a>');
-    var url = description.match(regex);
-    $('#event-desc').text(description.replace(regexHtml, url.toString().substring(8, url.toString().length)));
+    if (regex.test(description)) {
+        let url = description.match(regex);
+        description = description.replace(regexHtml, url.toString().substring(8, url.toString().length));
+    }
+    $('#event-desc').text(description);
 
     $('#event-link').attr("href", info.event._def.url);
     $('#event-modal').modal('show')
