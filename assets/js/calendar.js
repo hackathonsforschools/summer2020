@@ -67,8 +67,7 @@ function displayEvent(info) {
         description = description.replace(regexHtml, url.toString().substring(8, url.toString().length));
     }
     $('#event-desc').text(description);
-
-    $('#event-link').attr("href", info.event._def.url);
+    $('#event-link').attr("href", info.event._def.extendedProps.location);
     $('#event-modal').modal('show')
 }
 
