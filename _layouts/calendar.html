@@ -23,6 +23,7 @@ layout: default
 
 <div class="container page-content page">
     {{ content }}
+    <div id="timezone"></div>
     <div id="calendar"></div>
     <div id="event-modal" class="modal fade" tabindex="-1" role="dialog">
         <div class="modal-dialog modal-dialog-centered" role="document">
@@ -37,6 +38,7 @@ layout: default
                     <div><i class="material-icons">access_time</i> Date - <b id="event-date"></b></div>
                     <hr class="line">
                     <p id="event-desc"></p>
+                    <a id="event-link" href="#"><button id="event-button">Join in!</button></a>
                 </div>
             </div>
         </div>
